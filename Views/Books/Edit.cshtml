@@ -1,0 +1,7 @@
+@model BookLogger.Models.Book
+
+<h2>Edit Book</h2>
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    @Html.Partial("Create")
+</form>
