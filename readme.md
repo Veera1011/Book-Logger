@@ -12,47 +12,44 @@ BookLogger is a simple ASP.NET Core MVC web application that allows users to log
 
 ## 📁 Project Structure
 
-BookLogger/ ├── Controllers/ │ └── BooksController.cs ├── Models/ │ └── Book.cs │ └── ApplicationDbContext.cs ├── Views/ │ └── Books/ │ ├── Index.cshtml │ ├── Create.cshtml │ ├── Edit.cshtml │ ├── Details.cshtml │ └── Delete.cshtml ├── wwwroot/ │ └── (CSS/JS/Static Files) ├── Program.cs ├── appsettings.json
+BookLogger/ 
+     ├── Controllers/ 
+         │└── BooksController.cs 
+     ├── Models/ 
+         │ └── Book.cs 
+         │ └── ApplicationDbContext.cs 
+     ├── Views/ 
+         │ └── Books/
+             ├── Index.cshtml 
+             ├── Create.cshtml 
+             ├── Edit.cshtml 
+             ├── Details.cshtml 
+             └── Delete.cshtml 
+     ├── wwwroot/ 
+         │ └── (CSS/JS/Static Files) 
+         ├── Program.cs
+         ├── appsettings.json
 
-bash
-Copy
-Edit
+
 
 ## 🚀 Getting Started
 
 ### 1. Clone the Repository
-
-```bash
 git clone https://github.com/your-username/BookLogger.git
 cd BookLogger
 2. Restore Dependencies
-bash
-Copy
-Edit
 dotnet restore
 3. Build the Project
-bash
-Copy
-Edit
 dotnet build
 4. Add Required EF Core Packages (if not already added)
-bash
-Copy
-Edit
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 dotnet add package Microsoft.EntityFrameworkCore.Tools
 5. Apply Migrations
-bash
-Copy
-Edit
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 6. Run the Application
-bash
-Copy
-Edit
 dotnet run
-Navigate to https://localhost:5001 or http://localhost:5000 to use the app.
+Navigate to http://localhost:5253 to use the app.
 
 ✨ Features
 Add a new book with details like title, author, genre, status, and notes.
